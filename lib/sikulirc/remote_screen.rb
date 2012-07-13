@@ -78,6 +78,11 @@ module Sikulirc
     def press_home
       execute_command(@serv, "press_home")
     end
+
+    def press_end
+      execute_command(@serv, "press_end")
+    end
+
     private
 
     def raise_exception(exception_message, psc)
