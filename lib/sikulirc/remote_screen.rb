@@ -42,6 +42,10 @@ module Sikulirc
     def press_tab
       execute_command(@serv, "press_tab")
     end
+
+    def press_shift_tab
+      execute_command(@serv, "press_shift_tab")
+    end
     private
 
     def raise_exception(exception_message, psc)
