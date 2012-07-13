@@ -50,6 +50,22 @@ module Sikulirc
     def press_esc
       execute_command(@serv, "press_esc")
     end
+
+    def press_space
+      execute_command(@serv, "press_space")
+    end
+
+    def press_left_arrow
+      execute_command(@serv, "press_left_arrow")
+    end
+
+    def press_right_arrow
+      execute_command(@serv, "press_right_arrow")
+    end
+
+    def press_home
+      execute_command(@serv, "press_home")
+    end
     private
 
     def raise_exception(exception_message, psc)
