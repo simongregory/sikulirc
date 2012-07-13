@@ -38,6 +38,10 @@ module Sikulirc
       execute_command(@serv, "wait", :psc => psc, :timeout => timeout) { |xml_dump| process_result(xml_dump, psc) }
     end
 
+
+    def press_tab
+      execute_command(@serv, "press_tab")
+    end
     private
 
     def raise_exception(exception_message, psc)
