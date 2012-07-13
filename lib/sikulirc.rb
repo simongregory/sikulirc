@@ -5,5 +5,4 @@ require "sikulirc/exception"
 require "sikulirc/remote_screen"
 
 module Sikulirc
-  
 end

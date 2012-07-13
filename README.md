@@ -8,7 +8,7 @@ To get Sikuli Server, Please go to http://github.com/enix12enix/sikuli-remote-co
 
 Add this line to your application's Gemfile:
 
-    gem 'sikulirc'
+    gem 'sikulirc', :git => 'git://github.com/simongregory/sikulirc.git'
 
 And then execute:
 
@@ -38,3 +38,7 @@ Or install it yourself as:
 3. Commit your changes (`git commit -am 'Added some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## License
+
+MIT License, please see the LICENSE document.

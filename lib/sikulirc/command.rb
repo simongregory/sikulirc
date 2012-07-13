@@ -2,9 +2,9 @@ require 'net/http'
 
 module Sikulirc
   module Command
-    
+
     COMMANDS = {}
-    
+
     def self.load
       Dir.foreach(File.expand_path("../commands/", __FILE__)) do |file_name|
         if file_name == ".." or file_name == "."
@@ -17,9 +17,9 @@ module Sikulirc
         COMMANDS[file_name] = cmd
       end
     end
-    
+
     load
-    
+
     def execute_command(uri, cmd_name, args_hash=nil, &block)
       req = Net::HTTP::Post.new(uri.path)
       req.set_form_data(args_hash.nil? ? {"type"=> "sikuli"}.merge(COMMANDS.fetch(cmd_name)) : {"type"=> "sikuli"}.merge(COMMANDS.fetch(cmd_name)).merge(build_arg(args_hash)))
@@ -32,9 +32,9 @@ module Sikulirc
         res.body
       end
     end
-    
+
     private
-    
+
     def build_arg(args_hash)
       arg = Hash['args' => '|']
       args_hash.each do |k, v|
@@ -42,6 +42,5 @@ module Sikulirc
       end
       arg
     end
-    
   end
 end
