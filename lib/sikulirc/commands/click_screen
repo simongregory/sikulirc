@@ -1,0 +1,4 @@
+from sikuli.Sikuli import Screen, Pattern
+scr = Screen()
+center = scr.getCenter
+scr.click(center)
