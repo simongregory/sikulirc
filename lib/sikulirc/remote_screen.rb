@@ -43,6 +43,10 @@ module Sikulirc
       execute_command(@serv, "click_screen")
     end
 
+    def double_click_screen
+      execute_command(@serv, "double_click_screen")
+    end
+
     def press_tab
       execute_command(@serv, "press_tab")
     end
