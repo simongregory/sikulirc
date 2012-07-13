@@ -1,0 +1,4 @@
+from sikuli.Sikuli import Screen, Key
+scr = Screen()
+scr.keyDown(Key.ENTER)
+scr.keyUp(Key.ENTER)

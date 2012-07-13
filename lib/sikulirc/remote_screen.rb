@@ -55,6 +55,10 @@ module Sikulirc
       execute_command(@serv, "press_space")
     end
 
+    def press_enter
+      execute_command(@serv, "press_enter")
+    end
+
     def press_left_arrow
       execute_command(@serv, "press_left_arrow")
     end
