@@ -1,0 +1,7 @@
+from sikuli.Sikuli import Screen, Pattern, Location
+import time
+scr = Screen()
+origin = Pattern(psc)
+offset = logo.targetOffset(400,250)
+scr.click(offset)
+time.sleep(1)

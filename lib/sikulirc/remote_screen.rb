@@ -38,6 +38,13 @@ module Sikulirc
       execute_command(@serv, "wait", :psc => psc, :timeout => timeout) { |xml_dump| process_result(xml_dump, psc) }
     end
 
+    def focus_on_400_200_offset(psc)
+      execute_command(@serv, "focus_on_400_200_offset", :psc => psc) { |xml_dump| process_result(xml_dump, psc) }
+    end
+
+    def double_click_400_200_offset(psc)
+      execute_command(@serv, "double_click_400_200_offset", :psc => psc) { |xml_dump| process_result(xml_dump, psc) }
+    end
 
     def click_screen
       execute_command(@serv, "click_screen")
@@ -53,6 +60,10 @@ module Sikulirc
 
     def press_shift_tab
       execute_command(@serv, "press_shift_tab")
+    end
+
+    def press_f
+      execute_command(@serv, "press_f")
     end
 
     def press_esc
