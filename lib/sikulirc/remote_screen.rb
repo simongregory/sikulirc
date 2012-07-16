@@ -100,7 +100,7 @@ module Sikulirc
       if exception_message.include? "FindFailed: can not find"
         raise Sikulirc::ImageNotFound, "The image '#{psc}' does not exist."
       else
-        raise Sikulirc::CommandError, "somthing wrong of the command "
+        raise Sikulirc::CommandError, "Something wrong with the command."
       end
     end
 
