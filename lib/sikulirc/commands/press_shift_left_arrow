@@ -1,0 +1,6 @@
+from sikuli.Sikuli import Screen, Key
+scr = Screen()
+scr.keyDown(Key.SHIFT)
+scr.keyDown(Key.LEFT)
+scr.keyUp(Key.LEFT)
+scr.keyUp(Key.SHIFT)
