@@ -102,6 +102,14 @@ module Sikulirc
       execute_command(@serv, "press_end")
     end
 
+    def press_page_up
+      execute_command(@serv, "press_page_up")
+    end
+
+    def press_page_down
+      execute_command(@serv, "press_page_down")
+    end
+
     private
 
     def raise_exception(exception_message, psc)
