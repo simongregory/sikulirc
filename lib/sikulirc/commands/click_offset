@@ -1,11 +1,7 @@
-    # def click_offset(psc, x, y)
-    #   execute_command(@serv, "click_offset", :psc => psc, :x => x, :y => y) { |xml_dump| process_result(xml_dump, psc) }
-    # end
-
 from sikuli.Sikuli import Screen, Pattern, Location
 import time
 scr = Screen()
 origin = Pattern(psc)
-offset = origin.targetOffset(x,y)
+offset = origin.targetOffset(int(x),int(y))
 scr.click(offset)
 time.sleep(1)

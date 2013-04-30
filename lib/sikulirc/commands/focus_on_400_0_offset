@@ -1,7 +1,0 @@
-from sikuli.Sikuli import Screen, Pattern, Location
-import time
-scr = Screen()
-origin = Pattern(psc)
-offset = origin.targetOffset(400,0)
-scr.click(offset)
-time.sleep(1)

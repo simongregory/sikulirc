@@ -1,6 +1,6 @@
 from sikuli.Sikuli import Screen, Pattern, Location
 scr = Screen()
 orign = Pattern(psc)
-offset = origin.targetOffset(400,250)
+offset = origin.targetOffset(int(x),int(y))
 scr.click(offset)
 scr.doubleClick(offset)
