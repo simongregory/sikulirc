@@ -38,6 +38,10 @@ module Sikulirc
       execute_command(@serv, "wait", :psc => psc, :timeout => timeout) { |xml_dump| process_result(xml_dump, psc) }
     end
 
+    def click_offset(psc, x, y)
+      execute_command(@serv, "click_offset", :psc => psc, :x => x, :y => y) { |xml_dump| process_result(xml_dump, psc) }
+    end
+
     def focus_on_400_200_offset(psc)
       execute_command(@serv, "focus_on_400_200_offset", :psc => psc) { |xml_dump| process_result(xml_dump, psc) }
     end
