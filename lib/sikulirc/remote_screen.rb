@@ -34,6 +34,11 @@ module Sikulirc
       execute_command(@serv, "mouse_move", :psc => psc, :x => x, :y => y) { |xml_dump| process_result(xml_dump, psc) }
     end
 
+    def mouse_move_delay(delay = 0.5)
+      execute_command(@serv, "mouse_move_delay", :delay => delay)
+    end
+
+
     def find(psc)
       execute_command(@serv, 'find', :psc => psc) { |xml_dump| process_result(xml_dump, psc) }
     end
