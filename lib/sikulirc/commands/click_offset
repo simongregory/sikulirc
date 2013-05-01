@@ -1,5 +1,8 @@
+#!/usr/bin/env python
+
 from sikuli.Sikuli import Screen, Pattern, Location
 import time
+
 scr = Screen()
 origin = Pattern(psc)
 offset = origin.targetOffset(int(x),int(y))
