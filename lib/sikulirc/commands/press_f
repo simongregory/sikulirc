@@ -3,6 +3,5 @@
 from sikuli.Sikuli import Screen
 
 scr = Screen()
-scr.keyDown('f')
-scr.keyUp('f')
+scr.type('f')
 
