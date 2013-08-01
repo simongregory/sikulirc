@@ -103,6 +103,14 @@ module Sikulirc
       execute_command(@serv, "press_shift_right_arrow")
     end
 
+    def press_up_arrow
+      execute_command(@serv, "press_up_arrow")
+    end
+
+    def press_down_arrow
+      execute_command(@serv, "press_down_arrow")
+    end
+
     def press_home
       execute_command(@serv, "press_home")
     end
