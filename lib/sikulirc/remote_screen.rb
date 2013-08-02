@@ -51,6 +51,10 @@ module Sikulirc
       execute_command(@serv, "wait", :psc => psc, :timeout => timeout) { |xml_dump| process_result(xml_dump, psc) }
     end
 
+    def double_click(psc)
+      execute_command(@serv, "double_click", :psc => psc) { |xml_dump| process_result(xml_dump, psc) }
+    end
+
     def double_click_offset(psc, x = 0, y = 0)
       execute_command(@serv, "double_click_offset", :psc => psc, :x => x, :y => y) { |xml_dump| process_result(xml_dump, psc) }
     end
