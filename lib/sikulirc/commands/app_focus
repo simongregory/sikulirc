@@ -2,4 +2,4 @@
 
 from sikuli.Sikuli import App
 
-App.focus(content)
+App.focus(app)

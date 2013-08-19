@@ -11,7 +11,7 @@ module Sikulirc
     end
 
     def app_focus(app)
-      execute_command(@serv, 'set_min_similarity', :content => app)
+      execute_command(@serv, 'app_focus', :app => app)
     end
 
     def page_down
@@ -19,7 +19,7 @@ module Sikulirc
     end
 
     def set_min_similarity(similarity = 0.7)
-      execute_command(@serv, 'set_min_similarity', :content => similarity)
+      execute_command(@serv, 'set_min_similarity', :similarity => similarity)
     end
 
     def click(psc, timeout = 10)
