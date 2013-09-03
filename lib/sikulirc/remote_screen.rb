@@ -30,6 +30,10 @@ module Sikulirc
       execute_command(@serv, "click_offset", :psc => psc, :x => x, :y => y) { |xml_dump| process_result(xml_dump, psc) }
     end
 
+    def mouse_move_absolute(x = 0, y = 0)
+      execute_command(@serv, "mouse_move_absolute", :x => x, :y => y)
+    end
+
     def mouse_move(psc, x = 0, y = 0)
       execute_command(@serv, "mouse_move", :psc => psc, :x => x, :y => y) { |xml_dump| process_result(xml_dump, psc) }
     end
