@@ -83,6 +83,10 @@ module Sikulirc
       execute_command(@serv, "press_f")
     end
 
+    def type_text(text)
+      execute_command(@serv, "type_text", :text => text)
+    end
+
     def press_esc
       execute_command(@serv, "press_esc")
     end
